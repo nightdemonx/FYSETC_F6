@@ -40,7 +40,7 @@
 #define Y_MIN_PIN          14
 #define Y_MAX_PIN          15
 #define Z_MIN_PIN          12
-#define Z_MAX_PIN          9
+#define Z_MAX_PIN          2
 
 //
 // Z Probe (when not Z_MIN_PIN)
@@ -83,7 +83,7 @@
  */
 #define X_CS_PIN        70
 #define Y_CS_PIN        39
-#define Z_CS_PIN        74
+#define Z_CS_PIN        77
 
 #define E0_CS_PIN       47
 #define E1_CS_PIN       32
@@ -107,19 +107,19 @@
  #define X_SERIAL_TX_PIN       72
 
  #define Y_SERIAL_RX_PIN       73
- #define Y_SERIAL_TX_PIN       75
+ #define Y_SERIAL_TX_PIN       74
 
  #define Z_SERIAL_RX_PIN       78
  #define Z_SERIAL_TX_PIN       79
 
- #define E0_SERIAL_RX_PIN      76
- #define E0_SERIAL_TX_PIN      77
+ #define E0_SERIAL_RX_PIN      75
+ #define E0_SERIAL_TX_PIN      76
 
  #define E1_SERIAL_RX_PIN      80
  #define E1_SERIAL_TX_PIN      81
 
  #define E2_SERIAL_RX_PIN      22
- #define E2_SERIAL_TX_PIN      83
+ #define E2_SERIAL_TX_PIN      82
  
 #endif
 
@@ -140,9 +140,9 @@
 #define HEATER_2_PIN       7
 #define HEATER_BED_PIN     8
 
-#define FAN0_PIN           2
-#define FAN1_PIN           3
-#define FAN2_PIN           4
+#define FAN0_PIN           44
+#define FAN1_PIN           45
+#define FAN2_PIN           46
 
 //
 // Misc. Functions
@@ -151,15 +151,15 @@
 #define LED_PIN            13
 
 #if ENABLED(RGB_LED) || ENABLED(RGBW_LED)
-  #define RGB_LED_R_PIN    44
-  #define RGB_LED_G_PIN    45
-  #define RGB_LED_B_PIN    46
+  #define RGB_LED_R_PIN    3
+  #define RGB_LED_G_PIN    4
+  #define RGB_LED_B_PIN    9
   #define RGB_LED_W_PIN    -1
 #endif
 
-#ifndef FILWIDTH_PIN
-  #define FILWIDTH_PIN      9   // Analog Input on endstop X+
-#endif
+//#ifndef FILWIDTH_PIN
+//  #define FILWIDTH_PIN      9   // Analog Input on endstop X+
+//#endif
 
 // define digital pin 10 for the filament runout sensor. Use the digital input 10 on the servos connector
 #define FIL_RUNOUT_PIN      10
